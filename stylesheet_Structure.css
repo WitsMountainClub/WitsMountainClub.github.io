@@ -1,0 +1,145 @@
+html{
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 0;
+    margin:0;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    text-align: justify;
+}
+article {
+    max-width: 80rem;
+    text-align: justify;
+    text-justify: distribute;    
+    align-self: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: calc(16px + 0.5vw);
+    width: 90%;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 0 0 0 20px;
+    background-color: #a1a6b4;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    font-size: calc(8px + 1vw);
+}
+
+header .logo{
+    color:#0000cc;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    float: left;
+    font-weight: normal;
+}
+header .logo a{
+    text-decoration: none;
+}
+header .logo a:hover{
+    color:white;
+}
+header .logo span{
+    font-weight: bold;
+    color: #fff;
+}
+header .logo span:hover{
+    color:#0000cc;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a, header nav ul li a:visited{
+    border-left: 1px solid rgba(0,0,0,.2);
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    width: 12vw;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #fff;
+    background: #0000cc;
+}
+
+.menu-toggle{
+    color: #fff;
+    float: right;
+    line-height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 650px){
+    header{
+        padding: 0 20px;
+    }
+    header nav{
+        display: none;
+        position: absolute;
+        width: 40%;
+        background-color: #a1a6b4;
+        top: 60px;
+        right: -100%;
+    }
+    header nav.active{
+        right: 0;
+        display: block;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a{
+        border-top: 1px solid rgba(0,0,0,.2);
+        width: 100%;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .menu-toggle img{
+        width: 20px;
+    }
+}
+
+
+
+footer {
+    position: fixed;
+    z-index: 2;
+    background-color: #a1a6b4;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1% 0 1% 0;
+}
+footer a, a:visited{
+    color: #0000cc;
+    text-decoration: none;
+}
