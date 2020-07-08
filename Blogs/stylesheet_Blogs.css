@@ -1,0 +1,40 @@
+
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+.boxContainer a, .boxContainer a:visited{
+    text-decoration: none;
+    color: black;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: white;
+    border-radius: 5px;
+    margin: 2%;
+    padding: 2%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+.boxImage{
+    width: 30%;
+    min-width: 200pt;
+}
+
+.boxImage img{
+    width: 100%;
+}
+
+.boxText{
+    display: block;
+    min-width: 200pt;
+
+    width: 65%;
+}

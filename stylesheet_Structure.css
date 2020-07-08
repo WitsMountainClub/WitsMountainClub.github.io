@@ -1,9 +1,20 @@
+/*Possible palette: https://coolors.co/000714-001233-36405c-7e89a0-adb4c3-e8e9ee-ffffff
+1: Rich Black #000714
+2: Oxford Blue #001233
+3: Independence #36405c
+4: Shadow Blue #7e89a0
+5: Cadet Blue Crayola #adb4c3
+6: Ghost WHite #e8e9ee
+7: White #ffffff
+*/
+
 html{
     min-height: 100%;
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #f8f8f8;
+    background-color: #E8E9EE;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -20,8 +31,10 @@ article {
     align-self: center;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 5%;
     font-size: calc(16px + 0.5vw);
     width: 90%;
+
 }
 
 header{
@@ -31,7 +44,7 @@ header{
     top: 0;
     left: 0;
     padding: 0 0 0 20px;
-    background-color: #a1a6b4;
+    background-color: #7E89A0;
     width: 100%;
     box-sizing: border-box;
     height: 60px;
@@ -39,7 +52,7 @@ header{
 }
 
 header .logo{
-    color:#0000cc;
+    color: #000714;
     height: 60px;
     line-height: 60px;
     font-size: 30px;
@@ -50,14 +63,14 @@ header .logo a{
     text-decoration: none;
 }
 header .logo a:hover{
-    color:white;
+    color:#36405C;
 }
 header .logo span{
     font-weight: bold;
-    color: #fff;
+    color: white;
 }
 header .logo span:hover{
-    color:#0000cc;
+    color: #000714;
 }
 header nav{
     float: right;
@@ -77,18 +90,21 @@ header nav ul li a, header nav ul li a:visited{
     padding: 0;
     width: 12vw;
     text-align: center;
-    color: #fff;
+    color: white;
     text-decoration: none;
     display: block;
 }
-header nav ul li a:hover,
+header nav ul li a:hover{
+    color: white;
+    background: #36405C;
+}
 header nav ul li a.active{
-    color: #fff;
-    background: #0000cc;
+    color: white;
+    background: #000714;
 }
 
 .menu-toggle{
-    color: #fff;
+    color: white;
     float: right;
     line-height: 60px;
     font-size: 24px;
@@ -104,7 +120,7 @@ header nav ul li a.active{
         display: none;
         position: absolute;
         width: 40%;
-        background-color: #a1a6b4;
+        background-color: #7E89A0;
         top: 60px;
         right: -100%;
     }
@@ -128,18 +144,53 @@ header nav ul li a.active{
     }
 }
 
-
-
-footer {
-    position: fixed;
+footer {    
+    position: absolute;
     z-index: 2;
-    background-color: #a1a6b4;
+    background-color: #7E89A0;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    text-align: center;
-    padding: 1% 0 1% 0;
+    padding: 0.5rem 0 0.5rem 0;
 }
+
+footer nav{
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+}
+
 footer a, a:visited{
-    color: #0000cc;
+    color:#000714;
     text-decoration: none;
+}
+
+footer img{
+    max-width: 2rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+h1{
+    font-size: calc(20px + 3vw);
+    text-align: center;
+    color: #000714;
+}
+h2{
+    font-size: calc(12px + 1.5vw);
+    text-align: left;
+}
+h3{
+    font-size: calc(10px + 1.5vw);
+    text-align: left;
+    font-style: italic;
+    color: #001233;
+    margin: 0;
+    padding: 0;
+    padding-top: 2%;;
 }

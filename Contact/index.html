@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="../stylesheet_Structure.css" />
+    <link rel="stylesheet" href="stylesheet_Contact.css" />
+
+    <script type="module" src="../index.js" async></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page of the Wits Mountain Club Blog">
+    <meta name="author" content="Jesse van der Merwe">
+    <meta name="keywords" content="blog, climbing, wits, mountain club, contact, contact details">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="../">WUMC<span>BLOGS</span></a></div>
+        <nav class="header_nav">
+            <ul>
+                <li><a href="../Blogs/">Blogs</a></li>
+                <li><a href="" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><img src="../Images/menu_Mobile.png"></div>
+        </div>
+    </header>
+    <article>
+        <section>
+            <h1>Contact the WUMC</h1>
+            <h2>Send us an email with your epic tale:</h2>
+            <center>
+                <form onsubmit="window.location.href='mailto:eddieblogssa@gmail.com?subject='+ EmailForm.subject.value + '&body=' 
+                    + EmailForm.body.value" name="EmailForm" method="GET" class="EmailForm">
+                    <label>Name:</label>
+                    <input type="text" name="VisitorName">
+
+                    <label>Subject:</label>
+                    <input type="text" name="subject">
+
+                    <label>Message:</label>
+                    <textarea name="body" rows="6"></textarea>
+                    <br>
+                    <input type="submit" value="Open Your Email Program" class="button">
+                </form>
+            </center>
+            <h2>Social Media</h2>
+            <section class="contactContainer">
+                <div class="contactItem">
+                    <a href="https://www.instagram.com/witsmountainclub/" target="_blank">
+                        <img src="../Images/Logo_Instagram.png" alt="Instagram Logo" title="WUMC's Instagram">
+                    </a>
+                </div>
+                <div class="contactItem">
+                    <a href="https://www.facebook.com/WitsMountainClub/" target="_blank">
+                        <img src="../Images/Logo_FacebookThumb.png" alt="Facebook Logo" title="WUMC's Facebook">
+                    </a>
+                </div>
+                <div class="contactItem">
+                    <a href="http://www.wits.ac.za/sport/clubs/mountain-climbingbouldering/" target="_blank">
+                        <img src="../Images/Logo_Website.png" alt="Email Logo" title="WUMC's Website">
+                    </a>
+                </div>
+            </section>
+
+            <h2>Location:</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223.75958701096167!2d28.02646757844719!3d-26.191687985725906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c058a30e28f%3A0xc42fe3ef41844261!2sWits%20Mountain%20Club!5e0!3m2!1sen!2sza!4v1594214305598!5m2!1sen!2sza"
+                style="width: 100%; height: 20em; padding-bottom: 10%;" frameborder="0" style="border:0;"
+                allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </section>
+    </article>
+
+    <footer>
+        <nav>
+            <div>
+                ©WUMC 2020
+            </div>
+            <div>
+                <a href="https://www.instagram.com/witsmountainclub/" target="_blank" role="link" tabindex="0">
+                    <img src="../Images/Logo_Instagram.png" alt="Instagram Logo" title="WUMC's Instagram">
+                </a>
+                <a href="https://www.facebook.com/WitsMountainClub/" target="_blank" role="link" tabindex="0">
+                    <img src="../Images/Logo_FacebookThumb.png" alt="Facebook Logo" title="WUMC's Facebook">
+                </a>
+                <a href="http://www.wits.ac.za/sport/clubs/mountain-climbingbouldering/" target="_blank" role="link"
+                    tabindex="0">
+                    <img src="../Images/Logo_Website.png" alt="Website Logo" title="WUMC's Website">
+                </a>
+                <a href="mailto:witsmountain@gmail.com" target="_blank" role="link" tabindex="0">
+                    <img src="../Images/Logo_Email.png" alt="Email Logo" title="WUMC's Email">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
